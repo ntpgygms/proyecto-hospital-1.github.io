@@ -22,7 +22,7 @@ function mostrarMedicos() {
         celdaEspecialidad.textContent = medico.especialidad
         celdaConsultorio.textContent = medico.consultorio
         celdaCorreo.textContent = medico.correo
-        celdaPacientes.textContent = "Sin asignar"
+        celdaPacientes.textContent = "Pendiente de asignación"
     });
 }
 
