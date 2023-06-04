@@ -1,3 +1,3 @@
 # proyecto-hospital-1
-Grupo # 17:
+Grupo # 13:
 William Leonardo Malaver Camargo
