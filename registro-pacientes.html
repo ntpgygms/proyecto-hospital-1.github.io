@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Pacientes </title>
+    <title>Formulario Pacientes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>CENTRO MEDICO HOSPITALARIO BACKEND</h1>
+        <h1>HOSPITAL BACKEND</h1>
     </header>
     <main>
         <form id="registro-pacientes-form">
             <h2>REGISTRO DE PACIENTES</h2>
-            <label for="paciente">Nombre del paciente:<span> *</span></label>
-            <input type="text" id="paciente" name="paciente" required>
-            <label for="apellido">Apellido del paciente:<span> *</span></label>
+            <label for="nombre">Nombre:<span> *</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:<span> *</span></label>
             <input type="text" id="apellido" name="apellido" required>
-            <label for="cedula">Cédula del paciente:<span> *</span></label>
+            <label for="cedula">Cédula:<span> *</span></label>
             <input type="text" id="cedula" name="cedula" required>
-            <label for="edad">Edad del paciente:<span> *</span></label>
-            <input type="number" id="edad" name="edad" required>
-            <label for="telefono">Teléfono del paciente:<span> *</span></label>
+            <label for="edad">Edad:<span> *</span></label>
+            <input type="text" id="edad" name="edad" required>
+            <label for="telefono">Telefono:<span> *</span></label>
             <input type="tel" id="telefono" name="telefono" required>
             <label for="especialidad">Especialidad requerida:<span> *</span></label>
             <select id="especialidad" name="especialidad">
-                <option value="" style="text-align: center; color:lightgray;">Seleccione la especialidad</option>
+                <option value="">  Seleccione la especialidad  </option>
                 <option value="Medicina general">Medicina general</option>
                 <option value="Cardiología">Cardiología</option>
                 <option value="Medicina interna">Medicina interna</option>
@@ -45,8 +44,8 @@
             <input type="button" id="botonVolver" value="Volver">
         </div>
     </main>
+    <script src="guardar-pacientes.js"></script>
     <script src="volver.js"></script>
-    <script src="registro-pacientes.js"></script>
 </body>
 
 </html>

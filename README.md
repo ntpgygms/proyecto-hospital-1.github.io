@@ -1,3 +1,2 @@
-# proyecto-hospital-1
-Grupo # 13:
-William Leonardo Malaver Camargo
+# ProyectoVeterinariaFinal
+ Proyecto con la recopilacion de todo lo trabajado en clase
