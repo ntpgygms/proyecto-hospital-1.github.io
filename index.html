@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOSPITAL</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <h1>HOSPITAL BACKEND</h1>
-    </header>
-    <main class="listado-container">
-        <ul class="listado-servicios">
-            <li><a href="registro-pacientes.html">REGISTRO DE PACIENTES</a></li>
-            <li><a href="registro-medicos.html">REGISTRO DE MÉDICOS Y ESPECIALISTAS</a></li>
-            <li><a href="pacientes.html">LISTADO DE PACIENTES</a></li>
-            <li><a href="medicos.html">LISTADO DE MÉDICOS Y ESPECIALISTAS</a></li>
-        </ul>
-    </main>
-</body>
-
+    <body>
+        <header>
+            <div class="box">
+                <h1><img src="/img/logo2.png" width="200" height="200" alt="logo_hospital" ></h1>
+            </div>
+        </header>
+        <main>
+            <section class="servicios">
+                <h2 class="title">SERVICIOS</h2>
+                <div class="contenido-servicios">
+                    <ul class="listado-servicios">
+                        <li class="items"><a href="registro-pacientes.html">REGISTRO DE PACIENTES</a></li>
+                        <li class="items"><a href="registro-medicos.html">REGISTRO DE MÉDICOS Y ESPECIALISTAS</a></li>
+                        <li class="items"><a href="pacientes.html">LISTADO DE PACIENTES</a></li>
+                        <li class="items"><a href="medicos.html">LISTADO DE MÉDICOS Y ESPECIALISTAS</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="/img/logo2.png" width="200" height="200" alt="logo_hospital">
+            <p class="copyright">&copy Derechos de Autor: Hospital Backend - 2023</p>
+        </footer>
+    </body>
 </html>
