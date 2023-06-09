@@ -31,7 +31,7 @@ for (let i = 0; i < pacientesCookie.length; i++) {
     //crear la celda
     const celdaMedicoPaciente = fila.insertCell();
     //si hay medicos colocar el nombre del medico, de lo contrario colocar por asignar
-    celdaMedicoPaciente.textContent = medicoEspecialidad ? medicoEspecialidad.nombreMedico : "Por asignar";
+    celdaMedicoPaciente.textContent = medicoEspecialidad ? medicoEspecialidad.nombreMedico+" "+medicoEspecialidad.apellidoMedico : "Por asignar";
 }
 
 

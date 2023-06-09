@@ -29,7 +29,7 @@ for (let i = 0; i < medicosCookie.length; i++) {
         const pacientes = medicoPaciente.querySelector("#pacientes")
         for (let j = 0; j < pacientesEncontrados.length; j++) {
             const pacienteEncontrado = pacientesEncontrados[j];
-            pacientes.innerHTML += `<li>${pacienteEncontrado.nombre}</li>`;
+            pacientes.innerHTML += `<li>${pacienteEncontrado.nombre+" "+pacienteEncontrado.apellido}</li>`;
         }
     } else {
         medicoPaciente.textContent = "Sin pacientes";
