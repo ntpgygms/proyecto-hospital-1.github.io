@@ -5,49 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Pacientes</title>
+    <title>HOSPITAL</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <header>
-            <div class="box">
-                <h1 class="img"><img src="/img/logo4.png" width="200" height="200" alt="logo_hospital">REGISTRO DE PACIENTES</h1>
+        <div class="box">
+            <img src="/img/logo4.png" width="150" height="150" alt="logo_hospital">
+            <div class="titles">
+                <h1>REGISTRO DE PACIENTES</h1>
             </div>
-        </header>
+        </div>
     </header>
     <main>
         <form id="registro-pacientes-form">
-            <h2>REGISTRO DE PACIENTES</h2>
-            <label for="nombre">Nombre:<span> *</span></label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="apellido">Apellido:<span> *</span></label>
-            <input type="text" id="apellido" name="apellido" required>
-            <label for="cedula">Cédula:<span> *</span></label>
-            <input type="text" id="cedula" name="cedula" required>
-            <label for="edad">Edad:<span> *</span></label>
-            <input type="text" id="edad" name="edad" required>
-            <label for="telefono">Telefono:<span> *</span></label>
-            <input type="tel" id="telefono" name="telefono" required>
-            <label for="especialidad">Especialidad requerida:<span> *</span></label>
-            <select id="especialidad" name="especialidad">
-                <option value=""> Seleccione la especialidad </option>
-                <option value="Medicina general">Medicina general</option>
-                <option value="Cardiología">Cardiología</option>
-                <option value="Medicina interna">Medicina interna</option>
-                <option value="Dermatología">Dermatología</option>
-                <option value="Rehabilitación Física">Rehabilitación Física</option>
-                <option value="Psicología">Psicología</option>
-                <option value="Odontología">Odontología</option>
-                <option value="Radiología">Radiología</option>
-            </select>
+            <fieldset>
+                <legend>Ingrese los datos del paciente</legend>
+                <label for="nombre">Nombre:<span> *</span></label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:<span> *</span></label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="cedula">Cédula:<span> *</span></label>
+                <input type="text" id="cedula" name="cedula" required>
+                <label for="edad">Edad:<span> *</span></label>
+                <input type="text" id="edad" name="edad" required>
+                <label for="telefono">Telefono:<span> *</span></label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="especialidad">Especialidad requerida:<span> *</span></label>
+                <select id="especialidad" name="especialidad">
+                    <option value=""> Seleccione la especialidad </option>
+                    <option value="Medicina general">Medicina general</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Medicina interna">Medicina interna</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Rehabilitación Física">Rehabilitación Física</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Radiología">Radiología</option>
+                </select>
+            </fieldset>
 
-            <input type="submit" value="Enviar">
+            <div class="boton-container">
+                <input type="submit" value="Enviar formulario">
+                <input type="button" id="botonVolver" value="Volver">
+            </div>
         </form>
-        <div class="boton-container">
-            <input type="button" id="botonVolver" value="Volver">
-        </div>
     </main>
     <script src="guardar-pacientes.js"></script>
     <script src="volver.js"></script>

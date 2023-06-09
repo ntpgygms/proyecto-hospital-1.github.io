@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PACIENTES</title>
+    <title>HOSPITAL</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>HOSPITAL BACKEND</h1>
+        <div class="box">
+            <img src="/img/logo4.png" width="150" height="150" alt="logo_hospital">
+            <div class="titles">
+                <h1>LISTADO DE PACIENTES</h1>
+            </div>
+        </div>
     </header>
     <main class="tabla-container">
         <table id="tabla-pacientes">
-            <h2>LISTADO DE PACIENTES</h2>
             <thead>
                 <tr>
                     <th>Nombre del paciente</th>
@@ -37,6 +45,12 @@
     </main>
     <script src="pacientes-cookies.js"></script>
     <script src="volver.js"></script>
+
+    <footer>
+        <img src="/img/logo4.png" width="100" height="100" alt="logo_hospital">
+        <p class="copyright">&copy Derechos de Autor: Hospital Backend - 2023</p>
+    </footer>
+
 </body>
 
 </html>

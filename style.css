@@ -9,18 +9,39 @@ html {
 }
 
 header {
-    /* background: linear-gradient(#2c3e50, #4ca1af, #fefefe, #FFFFFF); */
 /*     border: 3px solid red; */
+    background: linear-gradient(#4ca1af, #21B2E0,#fdfdfd,#ffffff);
     padding: 20px 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.25;
 }
 
 .box{
-    /* border: 3px solid orange; */
+/*     border: 3px solid orange; */
     width: 940px;
     position:relative;
     margin-left: auto;
     margin-right: auto;
 }
+
+.titles{
+/*     border: 3px solid blue; */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.titles h1{
+    text-align: center;
+    font-size: 1em;/*Tamaño de fuente dos veces del tamaño original*/
+/*     margin: 0 0 1em 0;/*Margen externo inferior del tamaño de fuente por defecto*/
+    /*clear:left; */
+   /*  color: rgba(0, 0, 0, 0.25); *//*Aplicar estilo de color RGB a los títulos, incluyendo la opacidad*/
+/*     text-shadow: 2px 2px 10px #21B2E0;*/
+}
+
 
 .servicios{
     margin:150px auto;
@@ -28,39 +49,39 @@ header {
 
 .listado-servicios{
     width: 940px;
-    text-align: center;
+/*     text-align: center; */
 }
 
 .listado-servicios li {
     display: inline-block;
-    width: 44%;
+/*  border: 0.5px groove black;
+    border-radius: 7px; */
+    width: 45%;
     vertical-align: top;
-    border: 3px solid black;
-/*     background-color: lightblue; */
-    border-radius: 7px;
-    margin: 0 2%;
+    margin: 0 1%;
     line-height: 1.5;
     text-decoration: none;
     color: #3e8e41;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .listado-servicios h2{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-/* h1,
-h2 {
-    margin-top: 20px;
-    text-align: center;
-} */
+.listado-servicios items{
+    text-align: left;
+}
 
-/* main {
-    max-width: 500px;
-    margin: auto;
-} */
+fieldset{
+    display: block;
+    margin: 50px;
+    padding: 25px;
+    border: 4px groove;
+}
 
 label {
     display: block;
@@ -77,25 +98,30 @@ select {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Mulish', sans-serif;
     box-sizing: border-box;
 }
 
 input[type="submit"],
 input[type="button"] {
-    background-color: #4CAF50;
+    font-family: 'Mulish', sans-serif;
+    width: auto;
+    background-color: #1A6DB6;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 12px 20px;
     font-size: 16px;
-    font-family: sans-serif;
-    transition: background-color 0.3s ease;
+/*     transition: background-color 0.3s ease; */
 }
 
 input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #21B2E0;
+}
+
+input[type="button"]:hover {
+    background-color: #21B2E0;
 }
 
 span {
@@ -107,58 +133,66 @@ table {
     border-collapse: collapse;
     width: 100%;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 15px;
+    margin:50px auto;
 }
 
 th,
 td {
     padding: 10px;
     text-align: center;
-    border: 5px solid #4CAF50;
-    background-color: #4CAF50;
-
-
+    border: 1.5px groove #49c2e6;
 }
 
 td {
-    color: #fff;
+    color: #000000;
 }
 
 th {
-    background-color: #f2f2f2;
+    color: #ffffff;
+    background-color: #21B2E0;
     font-weight: bold;
 }
 
 .tabla-container {
-    max-width: 80%;
+    max-width: 940px;
+    margin: 10px auto 10px;
+
 }
+
 .contenido-servicios {
-    width: 940PX;
+    width: 940px;
     margin: 0 auto;
 }
 .boton-container {
-    margin-block: 30px;
+/*     border: 3px solid black; */
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 }
 
-/* .listado-servicios{
-    line-height: 1.5;
-    text-decoration: none;
-    color: #3e8e41;
-    font-size: 30px;
-} */
-
-.items::before{
-    content:"🌟"
+.boton-container input{
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.items a{
+.item-med::before{
+/*     content:"⚕️" */
+    /* content:"🙋" */
+    content:"👨‍⚕️"
+}
+
+.item-pac::before{
+    content:"🙋"
+    }
+
+.item-med a,
+.item-pac a{
     text-decoration: none;
     color: black;
 }
-
-/* .listado-servicios li::marker {
-    content: 🐾;
-} */
 
 .title{
     text-align: center;
@@ -171,9 +205,9 @@ th {
 
 footer{
     text-align: center;
-/*     background: rgb(84, 174, 238); */
-    /* background: linear-gradient(#FFFFFF,#fdfdfdfd,#4ca1af,#2c3e50); */
-    position: absolute;
+/*     background: #21B2E0; */
+    background: linear-gradient(#FFFFFF,#fdfdfdfd,#21B2E0,#4ca1af);
     bottom: 0;
     width: 100%;
+    padding: 20px;
 }
