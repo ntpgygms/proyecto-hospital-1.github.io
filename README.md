@@ -10,5 +10,7 @@ Algunas de las referencias de código utilizadas en este ejercicio:
 * https://blog.hubspot.com/website/center-div-css
 * https://www.w3schools.com/cssref/pr_margin.php
 * https://app.aluracursos.com/course/html5-css3-avanzando-css
+* https://github.com/llherrerap/proyecto-veterinaria
+* https://github.com/dbaagarcia/ProyectoVeterinariaFinal
 
 
